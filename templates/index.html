@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FilBill</title>
+</head>
+<body>
+<h1>Hello, it's FilBill</h1>
+<ul>
+    <li><a href="{{url_for('get_hot_water_page')}}">hot water</a></li>
+    <li><a href="{{url_for('get_cold_water_page')}}">cold water</a></li>
+</ul>
+<table>
+    <tbody>
+    <tr>
+        <td><span style="color:red">{{ hot_max_value }}</span></td>
+        <td><span style="color:blue">{{ cold_max_value }}</span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

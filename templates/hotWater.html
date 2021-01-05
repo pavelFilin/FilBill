@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hot water</title>
+</head>
+<a href="{{ url_for('index') }}">return to /</a>
+<h1>Hot water bill list</h1>
+<form method="POST" action="{{ url_for('add_hot_water_value') }}">
+    <input type="number" step=0.01  name="value" min="{{ max_value }}" placeholder="value"/>
+    <button type="submit">Add new value</button>
+</form>
+
+<h1 style="color:red">Hot Water Bill</h1>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>date</th>
+        <th>value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for value in hot_water_values %}
+    <tr>
+        <td><b>#{{ value.id }}</b></td>
+        <td>{{ value.date }}</td>
+        <td>{{ value.value }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<body>
+
+</body>
+</html>

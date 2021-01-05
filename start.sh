@@ -1,0 +1,1 @@
+FLASK_APP=start.py flask run  -h 0.0.0.0 -p 8800 Fcat .gitignoreLASK_APP=start.pyls
