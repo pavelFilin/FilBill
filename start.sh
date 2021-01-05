@@ -1,1 +1,1 @@
-FLASK_APPv=start.py flask run  -h 0.0.0.0 -p 8800
+FLASK_APP=start.py flask run  -h 0.0.0.0 -p 8800
